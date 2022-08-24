@@ -18,6 +18,7 @@ function Login() {
         e.preventDefault()
         const response = await fetch(`http://localhost:3001/authentication/`, {
             method: 'POST',
+            credentials: 'include',
             headers: {
                 'Content-Type': 'application/json'
             },
